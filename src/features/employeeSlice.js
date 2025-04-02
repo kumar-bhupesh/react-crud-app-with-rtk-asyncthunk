@@ -100,18 +100,12 @@ const initialState = {
   employees: [],
   loading: false,
   error: null,
-  searchData: "",
 };
 
 const employeeSlice = createSlice({
   name: "employees",
   initialState,
-  reducers: {
-    setSearchData: (state, action) => {
-      state.searchData = action.payload;
-    },
-  },
-
+  reducers: {},
   extraReducers: (builder) => {
     builder
       .addCase(addEmployee.pending, (state) => {
@@ -167,4 +161,4 @@ const employeeSlice = createSlice({
 
 export default employeeSlice.reducer;
 
-export const { setSearchData } = employeeSlice.actions;
+

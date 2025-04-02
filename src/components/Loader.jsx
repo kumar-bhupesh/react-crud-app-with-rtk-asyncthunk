@@ -5,15 +5,15 @@ const Loader = () => {
     <div
       style={{
         width: "100%",
-        height: "75vh",
+        height: "100vh",
         background: "transparent",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
       }}
     >
-      <div class="spinner-border" role="status">
-        <span class="visually-hidden">Loading...</span>
+      <div className="spinner-border" role="status">
+        <span className="visually-hidden">Loading...</span>
       </div>
     </div>
   );
